@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url(../img/back.jpg);
+    background-size:cover;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    overflow: hidden;
+}
+.note {
+    background: rgba(70, 68, 82, 0.212);
+    padding: 5px;
+    border: 1px solid #00000065;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.note:hover {
+    width: auto;
+    height: auto;
+    white-space: normal;
+    padding: 10px;
+}
+.login-box {
+    background:rgba(0, 0, 0, 0.822);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+.input-field {
+    margin: 10px 0;
+    padding: 8px;
+    width: 200px;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 20%;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: left 0.2s ease, top 0.2s ease;
+    margin-top: 20px;
+}
